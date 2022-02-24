@@ -2,11 +2,23 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Silly-Duko</title>
-    <link rel="stylesheet" href="stlyle.css">
+    <!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!-- font awesome & google link-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+            integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    
+        <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <title>Document</title>
+    <script src="index.js"></script>
+    
 </head>
 <header>
     <h1>Silly-Duko</h1>
@@ -14,7 +26,7 @@
         <div id="level">
             <h2>Choose Level: </h2>
             <label><input id="level-1" type= "radio" name ="level" value ="beginner" checked>Beginner</label>
-            <label><input id="level-2" type= "radio" name ="level" value ="novice">Novice</label>
+            <label><input id="level-2" type= "radio" name ="level" value ="intermediate">Intermediate</label>
             <label><input id="level-3" type= "radio" name ="level" value ="expert">Expert</label>
 
         </div>
@@ -32,16 +44,33 @@
 
         </div>
     </div>
-    <button>Let's Play!</button>
+    <button id="start-btn">Let's Play!</button>
 </header>
 
-<body>
+<body class=>
+    <div id="stats">
+        <p id="timer"></p>
+        <p id="lives"></p>
+        </div>
 
+    <div id="game">
+        <div id="board"></div>
+        <div id="number-container" class="hidden"> 
+            <p id="one">1</p>
+            <p id="two">2</p>
+            <p id="three">C</p>
+            <p id="four">D</p>
+            <p id="five">5</p>
+            <p id="six">F</p>
+            <p id="seven">7</p>
+            <p id="eight">H</p>
+            <p id="nine">9</p>
+             </div>
+    </div>
 
 </body>
 <footer>
-
+<p>Created By Peter Hennessy 2022</p>
 </footer>
-<script src="index.js"></script>
 
 </html>
