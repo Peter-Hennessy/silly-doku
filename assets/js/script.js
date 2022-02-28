@@ -40,14 +40,57 @@ function startGame() {
    generateBoard(board);
    }
 
-   function generateBoard(board){
+   function generateBoard(board) {
        //Clear previous games 
        clearPrevious();
-}
+       //Let used to increment tile ids
+       let idCount= 0;
+       //Create 81 Tiles
+       for (let i = 0; i < 81; i++) {
+           //Create a new paragraph element
+           let tile = document.createElement("p");
+           //If tile is not meant to be blank
+           if (board.charAt(i) != "-") {
+               //Set Tile text to correct number or letter
+               tile.textContent = board.charAt(i);
+
+           } else {
+               //Add click event listener to tile
+
+           }
+           //Assign tile id
+           tile.id = idCount;
+           //Increment next tile
+           idCount ++;
+           //Add tile class to all tiles
+           tile.classList.add("tile");
+           if ((tile.id > 17 && tile.id < 27) || (tile.id > 44 & tile.id < 54)) {
+               tile.classList.add("bottomBorder");
+             }
+             if ((tile.id +1) % 9 == 3 || (tile.id +1) % 9 == 6) {
+                 tile.classList.add("rightBorder");
+             }
+             //Add tiles to te board
+             id("board").appendChild(tile);   
+          }
+        }
+
 
 function clearPrevious() {
 //Access all of the tiles
 let tiles = qsa(".tile");
+for (let i = 0; 1 < tiles.length; i++) {
+    tiles[i].remove();
+}
+//If there is a timer clear it
+if (timer) clearTimeout(timer);
+//Deselect any numbers
+for (let i = 0; i < id("number-container").children.length; i++) {
+    id("number-container").children[i].classList.remove("selected");
+}
+//Clear selected Variables
+selectedTile = null;
+selectedNum = null;
 }
 
 
