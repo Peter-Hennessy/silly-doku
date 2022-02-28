@@ -36,8 +36,31 @@ function startGame() {
    lives = 5;
    disableSelect = false;
    id("lives").textContent = "Lives Remaining: 5";
+   //Create board based on level selected
+   generateBoard(board);
+   }
+
+   function generateBoard(board){
+       //Clear previous games 
+       clearPrevious();
 }
 
+function clearPrevious() {
+//Access all of the tiles
+let tiles = qsa(".tile");
+}
+
+
+//Helper Functions
 function id(id) {
     return document.getElementById(id);
+}
+
+function qs(selector) {
+    return document.querySelector(selector);
+}
+
+function qsa(selector) {
+    return document.querySelectorAll(selector);
+
 }
