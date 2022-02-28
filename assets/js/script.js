@@ -13,3 +13,31 @@ const expert = [
     "7125HCF9DFC971D25HHD52F917C521DCF9H7CF792HD15D9H175C2F1HDF975C225CHD17F997FC52HD1" 
 ];
 
+//Create variables
+var timer;
+var timeRemaining;
+var lives;
+var selectedNum;
+var selectedTile;
+var disableSelect;
+
+window.onload = function() {
+    //Run startgame function when button is clicked
+    id("start-btn").addEventListener("click", startGame);
+}
+
+function startGame() {
+   //Choose game level
+   let board;
+   if (id("level-1").checked) board = beginner[0];
+   else if (id("level-2").checked) board = intermediate[0];
+   else board = expert[0];
+   //Set the ammount of lives to 5 and enable selecting numbers, letters & tiles
+   lives = 5;
+   disableSelect = false;
+   id("lives").textContent = "Lives Remaining: 5";
+}
+
+function id(id) {
+    return document.getElementById(id);
+}
