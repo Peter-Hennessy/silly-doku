@@ -47,7 +47,10 @@ function startGame() {
        qs("body").classList.add("dark");
    }
    }
-
+function startTimer() {
+    //Set time remainingbased on selection
+    if (id("time-1").checked) time
+}
    function generateBoard(board) {
        //Clear previous games 
        clearPrevious();
