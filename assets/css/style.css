@@ -59,7 +59,7 @@ p#timer, p#lives {
     display: flex;
     justify-content: center;
 }
-
+/* Number containers containing letter and numbers and style to target the P elements */
 #number-container > p {
     border: 1px solid #0a0a0a;
     border-radius: 20%;
@@ -71,7 +71,7 @@ p#timer, p#lives {
     margin-bottom: 5px;
     text-align: center;
 }
-
+/* styling for the board display area*/
 #board {
     padding-top: 10px;
     margin-top: 10px;
@@ -83,7 +83,7 @@ p#timer, p#lives {
     height: 600px;
     
 }
-
+/* styling for 81 tiles on the board*/
 
 .tile {
     border: 1px solid #0a0a0a;
