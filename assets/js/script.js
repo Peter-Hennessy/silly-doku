@@ -49,7 +49,10 @@ function startGame() {
    }
 function startTimer() {
     //Set time remainingbased on selection
-    if (id("time-1").checked) time
+    if (id("time-1").checked) timeRemaining = 300;
+    else if (id("time-2").checked) timeRemaining = 600;
+    else timeRemaining = 900;
+    //Set the timer for first second
 }
    function generateBoard(board) {
        //Clear previous games 
