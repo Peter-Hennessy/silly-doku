@@ -53,6 +53,13 @@ function startTimer() {
     else if (id("time-2").checked) timeRemaining = 600;
     else timeRemaining = 900;
     //Set the timer for first second
+    id("timer").textContent = timeconversion(timeRemaining);
+    timer = setInterval(function() {
+        timeRemaining --;
+    // If no time remaining the game shall end
+    if (timeRemaining === 0) endGame();
+    id("timer").textContent = timeConversion(timeRemaining);
+    }, 1000) 
 }
    function generateBoard(board) {
        //Clear previous games 
