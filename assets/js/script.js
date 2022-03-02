@@ -38,6 +38,14 @@ function startGame() {
    id("lives").textContent = "Lives Remaining: 5";
    //Create board based on level selected
    generateBoard(board);
+   //Start Timer
+   startTimer();
+   //Sets the theme based on input
+   if (id("theme-1").checked) {
+       qs("body").classList.remove("dark");
+   }else {
+       qs("body").classList.add("dark");
+   }
    }
 
    function generateBoard(board) {
