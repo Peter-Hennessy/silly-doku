@@ -1,8 +1,8 @@
 //Load board manually
 
 const beginner = [
-     "F------7------5-2------1---CF2----H1—9F-----71--9-D-5-2---F51---7H----CD5-------",
-"FH5C2917D971DH5C2F2CD7F1H59CF257D9H15D9F1H7C271H29CDF5H2C9DF517197H52FCD5F1C729H" 
+     "F------7------5-2------1---CF2----H1--9F-----71--9-D-5-2---F51---7H----CD5-------",
+     "FH5C2917D971DH5C2F2CD7F1H59CF257D9H15D9F1H7C271H29CDF5H2C9DF517197H52FCD5F1C729H" 
 ]; 
 const intermediate = [
      "--9-------D----F-75H-C1----15--D-CF-------D-H----9-------75----C-------1--2--C--", 

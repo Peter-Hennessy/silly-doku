@@ -37,7 +37,7 @@ h1 {
 }
 
 #game-setup > * {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     padding-left : 50px;
     padding-right: 50px;
     display: flex;
@@ -50,7 +50,7 @@ button {
 }
 
 p#timer, p#lives {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
     text-align: center;
 }
@@ -78,6 +78,7 @@ number-container > p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-content: flex-start;
     width: 600px;
     height: 600px;
     
@@ -85,13 +86,13 @@ number-container > p {
 
 
 .tile {
-    border: 1px #0a0a0a;
-    width: 30px;
-    height: 30px;
+    border: 1px solid #0a0a0a;
+    width: 60px;
+    height: 60px;
     text-align: center;
-    margin: none;
+    margin: 0px;
     vertical-align: middle;
-    font-size: 20pt;
+    font-size: 40pt;
 }
 
 p.selected {
