@@ -46,6 +46,8 @@ function startGame() {
    }else {
        qs("body").classList.add("dark");
    }
+   //Show the Number &  Letter Container
+   id("number-container").classList.remove("hidden");
    }
 function startTimer() {
     //Set time remainingbased on selection
@@ -53,7 +55,7 @@ function startTimer() {
     else if (id("time-2").checked) timeRemaining = 600;
     else timeRemaining = 900;
     //Set the timer for first second
-    id("timer").textContent = timeconversion(timeRemaining);
+    id("timer").textContent = timeConversion(timeRemaining);
     timer = setInterval(function() {
         timeRemaining --;
     // If no time remaining the game shall end
@@ -61,6 +63,16 @@ function startTimer() {
     id("timer").textContent = timeConversion(timeRemaining);
     }, 1000) 
 }
+// Converts seconds into string of MM:SS format
+ function timeConversion(time) {
+     let minutes = Math.floor(time/60);
+     if (minutes < 10) minutes = "0" + minutes;
+     let seconds = time % 60;
+     if (seconds < 10) seconds = "0" + seconds;
+     return minutes + ":" + seconds;
+
+
+ }
    function generateBoard(board) {
        //Clear previous games 
        clearPrevious();
