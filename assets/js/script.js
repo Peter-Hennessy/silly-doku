@@ -24,6 +24,30 @@ var disableSelect;
 window.onload = function() {
     //Run startgame function when button is clicked
     id("start-btn").addEventListener("click", startGame);
+    //Add eventlistener to each number & each container
+    for (let i = 0 ; i < id("number-container").children.length; i++) {
+        id("number-container").children[i].addEventListener("click", function(){
+            //If selectiion is not disable
+            if(!disableSelect) {
+                //If number is already selected
+                if (this.classList.contains("selected")){
+                    //Then remove selction
+                    this.classList.remove("selected");
+                    selectedNum = null;
+                } else {
+                    //Deselect all other numbers
+                    for (let i = 0; i < 9; i++) {
+                        id("number-container").children[i].classList.remove("selected");
+                         }
+                         //Select it an update selectedNum Variable
+                         this.classList.add("selected");
+                         selectedNum =this;
+                         updateMove();
+                }
+            }
+        });
+
+    }
 }
 
 function startGame() {
