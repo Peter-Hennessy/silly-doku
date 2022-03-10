@@ -31,7 +31,7 @@ window.onload = function () {
             if (!disableSelect) {
                 //If number is already selected
                 if (this.classList.contains("selected")) {
-                    //Then remove selction
+                    //Then remove selection
                     this.classList.remove("selected");
                     selectedNum = null;
                 } else {
@@ -155,6 +155,64 @@ function generateBoard(board) {
     }
 }
 
+function updateMove() {
+    // if a tile and number/letter is selected
+    if (selectedTile && selectedNum) {
+        //Set the tile to the correct number/letter
+        selectedTile.textContent = selectedNum.textContent;
+        //if the number/letter matches the corresponding number/letter in the solution key
+        if (checkCorrect(selectedTile)) {
+            //Deselect the tile 
+            selectedTile.classList.remove("selected");
+            selectedNum.classList.remove("selected");
+            //Clear the selected Variables
+            selectedNum = null;
+            selectedTile = null;
+            // If the number/letter does not match the solution key
+        } else{
+            //Disable Seletin a new number/letter for one second
+            disableSelect = true;
+            // Make tile change color
+            selectedTile.classList.add("incorrect");
+            //restart in one second
+            setTimeout(function() {
+                // Subtract lives by one
+                lives --;
+                // If No Lives remain GAME OVER!
+                if (lives === 0) {
+                    endGame();
+                } else {
+                      //If lives is not equal to zero
+                      // Update lives text
+                      id ("lives").textContent = "Lives Remaining"  +  lives;
+                      //Re-enable selecting Number & tiles
+                      disableSelect = false;
+                }
+                // Restore tile color and remove selected from both
+                selectedTile.classList.remove("incorrect");
+                selectedTile.classList.remove("selected");
+                selectedNum.classList.remove("selected");
+                // Clear the tile text and clear selected variable
+                selectedTile.textContent = "";
+                selectedTile = null;
+                selectedNum = null;
+
+
+            }, 1000);
+        }
+    }
+}
+
+function checkCorrect(tile) {
+    //Set solution based od level selected
+    let solution;
+    if (id("level-1").checked) solution = beginner[1];
+    else if (id("level-2").checked) solution = intermediate[1];
+    else board = expert[1];
+    // If tile number/letter is the same as solution's number/letter
+    if (solution.charAt(tile.id) === tile.textContent) return true;
+    else return false;
+}
 
 function clearPrevious() {
     //Access all of the tiles
