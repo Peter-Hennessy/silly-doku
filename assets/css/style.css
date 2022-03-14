@@ -26,6 +26,8 @@ footer {
 }
 
 
+
+
 h1 {
     font-size: 45pt;
     background-color: gray;
@@ -96,7 +98,7 @@ p#timer, p#lives {
     vertical-align: middle;
     font-size: 40pt;
 }
-
+/* color change for the correct/ incorrect selection of letter & number*/
 p.selected {
     background-color: aqua;
 
@@ -116,21 +118,3 @@ p.incorrect {
 }
 
 /* Create media Queries*/
-@media screen and (max-width: 950px) {
-    #head {
-      clear: left;
-      float: left;
-      margin-left: 30px;
-      margin-bottom: 20px;
-      line-height: 20px;
-      font-size: 100%;
-    }
-  
-    
-  
-    #game {
-     box-sizing: 50%;
-      height: 600px;
-      margin: 0 auto;
-    }
-}
