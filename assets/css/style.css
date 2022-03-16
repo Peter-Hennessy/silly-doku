@@ -4,7 +4,7 @@ body.dark {
     color: rgb(255,255,255);
 
 }
-
+ 
 .hidden {
     display: none;
 }
@@ -44,8 +44,11 @@ h1 {
     margin-bottom: 10px;
     padding-left : 50px;
     padding-right: 50px;
-    display: flex;
+    display: inline-flex;
     align-items: center;
+    position: relative;
+
+    
 }
 
 button {
@@ -57,6 +60,7 @@ p#timer, p#lives {
     font-size: 25px;
     font-weight: bold;
     text-align: center;
+    
 }
 
 #game {
@@ -70,10 +74,11 @@ p#timer, p#lives {
     width: 60px;
     height: 60px;
     font-size: 40pt;
-    margin-left: 50px;
+    margin-left: 800px;
     margin-top: 5px;
     margin-bottom: 5px;
     text-align: center;
+
 }
 /* styling for the board display area*/
 #board {
@@ -85,6 +90,8 @@ p#timer, p#lives {
     align-content: flex-start;
     width: 600px;
     height: 600px;
+    position: absolute;
+    
     
 }
 /* styling for 81 tiles on the board*/
