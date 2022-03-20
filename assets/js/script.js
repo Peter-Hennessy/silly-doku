@@ -13,6 +13,8 @@ const expert = [
     "-1-5-------97-D2----5----7-5---C---7-F--2-D1---H--5---1-D------2-C-----9-7----H--", 
     "7125HCF9DFC971D25HHD52F917C521DCF9H7CF792HD15D9H175C2F1HDF975C225CHD17F997FC52HD1" 
 ];
+
+
 //Create variables
 var timer;
 var timeRemaining;
