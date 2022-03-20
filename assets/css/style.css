@@ -1,7 +1,8 @@
-
-
-
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body.dark {
     background-color: rgb(0,128,128);
     color: rgb(255,255,255);
@@ -42,15 +43,16 @@ h1 {
 #game-setup {
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
 #game-setup > * {
     margin-bottom: 10px;
     padding-left : 50px;
     padding-right: 50px;
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    position: relative;
+    flex-direction: column;
     
 
     
@@ -72,21 +74,28 @@ p#timer, p#lives {
 #game {
     display: flex;
     justify-content: center;
+    flex-direction: column;
 
 }
 /* Number containers containing letter and numbers and style to target the P elements */
+
+
 #number-container > p {
     border: 1px solid #0a0a0a;
     border-radius: 20%;
     width: 60px;
     height: 60px;
     font-size: 40pt;
-    margin-left: 700px;
     margin-top: 5px;
     margin-bottom: 5px;
     text-align: center;
     
 
+}
+
+#number-container {
+    display: flex;
+    justify-content: center;
 }
 /* styling for the board display area*/
 #board {
@@ -95,8 +104,8 @@ p#timer, p#lives {
     width: min(100%, 600px);
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-column-gap: 1px;
-    grid-row-gap: 1px;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
     margin: 0 auto;   
     
 }
@@ -104,7 +113,7 @@ p#timer, p#lives {
 
 .tile {
     border: 1px solid #0a0a0a;
-    width: clamp(10px, 100% 60px);
+    width: clamp(30px, 100%, 60px);
     height: max(30px, 100%);
     text-align: center;
     margin: 0px;
@@ -123,10 +132,10 @@ p.incorrect {
 }
 
 .rightBorder {
-    border-right: 4px solid #0a0a0a; 
+    border-right: 4px solid red; 
 }
 
 .bottomBorder {
-    border-bottom: 4px solid #0a0a0a; 
+    border-bottom: 4px solid red; 
 }
 

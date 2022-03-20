@@ -55,9 +55,13 @@ window.onload = function () {
 function startGame() {
     //Choose game level
     let board;
-    if (id("level-1").checked) board = beginner[0];
-    else if (id("level-2").checked) board = intermediate[0];
-    else board = expert[0];
+    if (id("level-1").checked) {
+        board = beginner[0];
+    } else if (id("level-2").checked) {
+        board = intermediate[0];
+    } else { 
+        board = expert[0];
+    }
     //Set the ammount of lives to 5 and enable selecting numbers, letters & tiles
     lives = 5;
     disableSelect = false;
@@ -85,7 +89,7 @@ function startTimer() {
     id("timer").textContent = timeConversion(timeRemaining);
     timer = setInterval(function () {
         timeRemaining--;
-        // If no time remaining the game shall end
+        // [If no time remaining the game shall end
         if (timeRemaining === 0) endGame();
         id("timer").textContent = timeConversion(timeRemaining);
     }, 1000)
