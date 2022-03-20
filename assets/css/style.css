@@ -91,17 +91,13 @@ p#timer, p#lives {
 /* styling for the board display area*/
 #board {
     padding-top: 10px;
-    margin-top: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: flex-start;
-    width: 600px;
-    height: 600px;
-    position: absolute;
-   
-    
-    
+    display: grid;
+    width: min(100%, 600px);
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
+    margin: 0 auto;   
     
 }
 /* styling for 81 tiles on the board*/
