@@ -41,7 +41,7 @@ Not at any point shall the same number be duplicated in the Same line or section
 
 
 # Wireframes
-![Silly-Duko wireframes](assets/images/image-suduko.jpg)
+![Silly-Duko wireframes](assets/images/wireframe-1.png)
 
 
  [Top](<#contents>)
