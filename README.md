@@ -41,7 +41,7 @@ Not at any point shall the same number be duplicated in the Same line or section
 
 
 # Wireframes
-![Silly-Duko wireframes](assets/images/wireframe-1.png)
+![Silly-Duko wireframes](assets/readme-images/wireframe-1.png)
 
 
  [Top](<#contents>)
@@ -61,27 +61,25 @@ For my project I decided to choose two fonts, Archivo as the text font and Robot
 - ### Color Scheme
 For this project I decided on a traditional color scheme of #0a0a0a which in a very _Dark Gray (mostly black)_ and #fff which is a _White_, and rgb(9,200,255) which is a shade of _Teal_  for the dark theme. 
 
-To Check The Contrast between **Text** and **Background** I used [Color Contrast](https://coolors.co/contrast-checker/112a46-acc8e5)
+To Check The Contrast between **Text** and **Background**  on both the **light & Dark**I used [Color Contrast](https://coolors.co/contrast-checker/112a46-acc8e5)
 
-![Contrast Color](assets/css/images/readme-images/contrast-1.png) ![Contrast Color](assets/css/images/readme-images/contrast-2.png) ![Contrast Color](assets/css/images/readme-images/contrast-4.png)
+![Contrast Color](assets/readme-images/contrast-1.png) ![Contrast Color](assets/readme-images/contrast-2.png) ![Contrast Color](assets/readme-images/contrast-4.png)
 
  [Top](<#contents>)
 # Features
 ### Challenge Menu
 This is situated in the upper bar of corner of the across all three pages to create continuity across the platform. Starting left to right this includes the following: 
 - Choose level depending on the knowledge of the game the use has
+- Once the player selects the desired level and time they then hit the **Let's Play** button which will start the game
 - Choose a time to add to the callenge of the game, if the tme runs out before the game is complete then  **Game Over!!!**
 
 - #### Home 
-![SILLY-DUKO landing page](assets/css/images/readme-images)
-This section has the landing Image with the Animated Circle cover text, this is created to draw the attention of the user to what the company does in a short brief text, but enough to draw curiosity of the user to look further
-
-- 
-
-- 
+![SILLY-DUKO landing page](assets/readme-images/screen-1.png) ![SILLY-DUKO open landing page](assets/readme-images/screen-2.png)
+- In Image 1 the user is greeted by a screen with level, time, and theme options. The rules are at the bottom of the page. Once the user selected the desired option, rwads the rules , then they press the **Ler's Play** button.
+- In Image 2 the game appears with the clock counting down, and the lives clearly dispkayed
 
 - #### Footer
-On the Footer of the page the rules are outlined, the player must select the desired level, the desired time and the the **Let's Play** button. 
+On the Footer of the page the rules are outlined to explain to the player hoe the game works
 
 
  # Future Features
@@ -98,6 +96,7 @@ On the Footer of the page the rules are outlined, the player must select the des
 * [Balsamiq](https://balsamiq.com/wireframes/) - used to create the wireframes.
 * [Gitpod](https://www.gitpod.io/#get-started) - used to deploy the website.
 * [Github](https://github.com/) - used to host and edit the website.
+* [JavaScript](https://www.w3schools.com/js/) - prvides the interactivity for the game
 
  [Top](<#contents>)
 
@@ -116,12 +115,12 @@ The site was deployed to GitHub pages. The steps to deploy a site are as follows
   3. Under **Source**, select the branch to **master**, then click **save**.
   4. Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
-![GitHub pages deployed image HERE](assets/css/images/readme-images/deploy.png)
+![GitHub pages deployed image HERE](assets/readme-images/deploy.png)
 
-  The live link to the Github repository can be found here -  https://github.com/Peter-Hennessy/HACCP-FLOW
+  The live link to the Github repository can be found here -  https://peter-hennessy.github.io/silly-doku/
 
 ### **To create a local clone of this project**
-The method from cloning a project from GitHub is below:
+The method from cloning a project from GitHub is below: ![Cloned Repository](assets/readme-images/clone.png)
 
 1. Under the repository’s name, click on the **code** tab.
 2. In the **Clone with HTTPS** section, click on the clipboard icon to copy the given URL.
@@ -136,10 +135,7 @@ The method from cloning a project from GitHub is below:
 ### Content
 
 * The font came from [Google Fonts](https://fonts.google.com/).
-* The locator is embedded from [Google Maps](https://www.google.com/maps).
-* The icons came from [Font Awesome](https://fontawesome.com/).
-* The form structure was found on [W3 schools](https://www.w3schools.com/howto/howto_css_contact_form.asp)
-* The inspiration for the Project page layout came from the [Love Running]
+* The concept for the game game from a online tutorial form 
 * [Balsamiq](https://balsamiq.com/wireframes/) was used to create the wireframes.
 
  [Top](<#contents>)
