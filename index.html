@@ -1,63 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-        <!-- font awesome & google link-->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-            integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    
-        <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
-        <link rel="stylesheet" href="assets/css/style.css">
-        <title>Silly-Duko</title>
-    
-    
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font awesome & google link-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Silly-Duko</title>
+
+
 </head>
 
 <!--Create header to select level/time/theme-->
-<header id="head">
+<body>
+
+<header>
     <h1>Silly-Duko</h1>
-    <section id="top">
     <div id="game-setup">
         <div id="level">
             <h2>Choose Level: </h2>
-            <label><input id="level-1" type= "radio" name ="level" value ="beginner" checked>Beginner</label>
-            <label><input id="level-2" type= "radio" name ="level" value ="intermediate">Intermediate</label>
-            <label><input id="level-3" type= "radio" name ="level" value ="expert">Expert</label>
+            <label><input id="level-1" type="radio" name="level" value="beginner" checked>Beginner</label>
+            <label><input id="level-2" type="radio" name="level" value="intermediate">Intermediate</label>
+            <label><input id="level-3" type="radio" name="level" value="expert">Expert</label>
 
         </div>
         <div id="time">
             <h2>Choose Time: </h2>
-            <label><input id="time-1" type= "radio" name ="time" value ="five" checked>5 Minutes</label>
-            <label><input id="time-2" type= "radio" name ="time" value ="ten">10 Minutes</label>
-            <label><input id="time-3" type= "radio" name ="time" value ="fifteen">15 Minutes</label>
+            <label><input id="time-1" type="radio" name="time" value="five" checked>5 Minutes</label>
+            <label><input id="time-2" type="radio" name="time" value="ten">10 Minutes</label>
+            <label><input id="time-3" type="radio" name="time" value="fifteen">15 Minutes</label>
 
         </div>
-        <div  id="theme">
+        <div id="theme">
             <h2>Choose Theme: </h2>
-            <label><input id="theme-1" type= "radio" name ="theme" value ="light" checked>Light</label>
-            <label><input id="theme-2" type= "radio" name ="theme" value ="dark">Dark</label>
+            <label><input id="theme-1" type="radio" name="theme" value="light" checked>Light</label>
+            <label><input id="theme-2" type="radio" name="theme" value="dark">Dark</label>
 
         </div>
     </div>
-  
+
     <button id="start-btn">Let's Play!</button>
+
 </header>
-</section>
 
 <!--Number & Letter Conatainer and Board-->
-<body>
-    
+
     <div id="stats">
         <p id="timer"></p>
         <p id="lives"></p>
-        </div>
+    </div>
     <div id="game">
         <div id="board"></div>
-        <div id="number-container" class="hidden"> 
+        <div id="number-container" class="hidden">
             <p id="one">1</p>
             <p id="two">2</p>
             <p id="three">C</p>
@@ -67,29 +67,34 @@
             <p id="seven">7</p>
             <p id="eight">H</p>
             <p id="nine">9</p>
-            
-             </div>
+
+        </div>
     </div>
-</div>
-</section>
     <script src="assets/js/script.js"></script>
-</body>
+
+
 <!--Rules and instruction to play game in footer-->
-<section id="footer">
+
 <footer>
+
     <h2>How to Play</h2>
-    <p><strong>Select Level: </strong> Choose between Beginner, Intermediate, Expert</p>
-    <p><strong>Select Time: </strong>Choose a Time to add Difficulty to Level</p>
+    <h3><strong>Select Level: </strong> Choose between Beginner, Intermediate, Expert</h3>
+    <br>
+    <h3><strong>Select Time: </strong>Choose a Time to add Difficulty to Level</h3>
+    <br>
     <h3>Rules</h3>
-    <ul>
-    <p>Fill in the Boxes with alternative Number & Letters</p>
-    <p>Every time you choose an incorrect number or letter you loose a life</p>
-    <p>When all lives are used up GAME OVER!</p>
-    <P>Depending on the time you set yourself, if the time runs outs before you complete the puzzle GAME OVER!</P>
-</ul>
-    
-<h3>Created By Peter Hennessy 2022</h3>
+    <br>
+    <h3>Fill in the Boxes with alternative Number & Letters</h3>
+    <br>
+    <h3>Every time you choose an incorrect number or letter you loose a life</h3>
+    <br>
+    <h3>When all lives are used up GAME OVER!</h3>
+    <br>
+    <h3>Depending on the time you set yourself, if the time runs outs before you complete the puzzle GAME OVER!</h3>
+
+
+    <h3>Created By Peter Hennessy 2022</h3>
 </footer>
-</section>
+</body>
 
 </html>

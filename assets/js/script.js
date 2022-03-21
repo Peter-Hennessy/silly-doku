@@ -55,9 +55,12 @@ window.onload = function () {
 function startGame() {
     //Choose game level
     let board;
-    if (id("level-1").checked) {
+    if (id("level-1").checked)
+     {
         board = beginner[0];
-    } else if (id("level-2").checked) {
+    } else if 
+    (id("level-2").checked)
+     {
         board = intermediate[0];
     } else { 
         board = expert[0];
@@ -249,7 +252,7 @@ function checkCorrect(tile) {
 function clearPrevious() {
     //Access all of the tiles
     let tiles = qsa(".tile");
-    for (let i = 0; 1 < tiles.length; i++) {
+    for (let i = 0; i < tiles.length; i++) {
         tiles[i].remove();
     }
     //If there is a timer clear it
