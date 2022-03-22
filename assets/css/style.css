@@ -4,9 +4,10 @@
     box-sizing: border-box;
 }
 
-/*@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@300&family=Roboto&display=swap");*/
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@300&family=Roboto&display=swap");
 
 /*Structure of top of page*/
+
 body.dark {
     background-color: rgb(0,128,128);
     color: rgb(255,255,255);
@@ -26,14 +27,14 @@ body {
 header {
     text-align: center;
     padding-bottom: 10px;
-    border-bottom: 1px solid gray;
-    font-family: Arc;
+    border-bottom: 1px solid lightgray;
+    font-family: Archivo;
 }
 
 footer {
     text-align: center;
     padding-bottom: 10px;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid lightgray;
     letter-spacing: 1px;
     font-size: 75%;
     background-color: lightgray;
@@ -46,8 +47,8 @@ footer {
 
 h1 {
     font-size: 45pt;
-    background-color: gray;
-    color: white;
+    background-color: lightgray;
+    color: #0a0a0a;
 }
 
 
