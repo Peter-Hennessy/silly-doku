@@ -1,10 +1,11 @@
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@300&family=Roboto&display=swap");
 
 /*Structure of top of page*/
 
@@ -34,11 +35,11 @@ header {
 footer {
     text-align: center;
     padding-bottom: 10px;
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid #0a0a0a;
     letter-spacing: 1px;
     font-size: 75%;
     background-color: lightgray;
-    color: black;
+    color: #0a0a0a;
     
 }
 
